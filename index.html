@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="caixa">
+        <h1>Caixa Eletrônico</h1>
+
+        <p class="saldo">
+            Saldo disponível:
+            <strong id="saldo">R$ 1.000,00</strong>
+        </p>
+
+        <label for="valor">Digite o valor do saque:</label>
+
+        <input
+            type="number"
+            id="valor"
+            placeholder="Ex: 280"
+            min="1"
+        >
+
+        <button onclick="realizarSaque()">Sacar</button>
+
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
